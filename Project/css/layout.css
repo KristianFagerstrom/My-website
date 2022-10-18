@@ -26,13 +26,19 @@ body {
   transform:translate(-50%, -50%);
   top: 30%;
   left: 50%;
-  background: #ffffff;
+  background: #e2a0c5;
 min-height: 100px;
 border-radius: 10px;
 }
 #task{
   position: relative;
   padding: 30px 20px;
+}
+#task input{
+  width: 75%;
+  height: 46px;
+  border-color: #000000;
+  padding-left: 10px;
 }
 ol,
 ul {
