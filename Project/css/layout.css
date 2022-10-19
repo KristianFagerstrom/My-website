@@ -37,8 +37,37 @@ border-radius: 10px;
 #task input{
   width: 75%;
   height: 46px;
-  border-color: #000000;
+  border-color: 2px solid #d1d3d4;
   padding-left: 10px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+#task input:focus{
+  outline: none;
+  border-color: #0d75ec;
+}
+#task button{
+  font-size: 1em;
+  position: relative;
+  float:right;
+  width: 20%;
+  height: 45px;
+  background-color:rgba(163, 225, 233, 1);
+  border-radius: 10px;
+  outline: none;
+}
+#tasks{
+bacrkground-color: rgba(163, 225, 233, 1);
+height: 50px;
+margin-bottom: 8px;
+padding: 5px 10px;
+display: flex;
+border-radius: Spx;
+aLlign-items: center;
+justify-content: space-between;
+border: 1px solid #939697;
+cursor: pointer;
 }
 ol,
 ul {
