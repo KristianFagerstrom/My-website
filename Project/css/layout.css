@@ -19,7 +19,7 @@ body {
   width: 100%;
 }
 
-#container{
+.container{
   width: 40%;
   min-width: 450px; 
   position: absolute;
@@ -34,7 +34,11 @@ border-radius: 10px;
   position: relative;
   padding: 30px 20px;
 }
-#task input{
+#task form{
+  display: flex;
+  width: 100%;
+}
+#task form input{
   width: 75%;
   height: 46px;
   border-color: 2px solid #d1d3d4;
@@ -47,6 +51,39 @@ border-radius: 10px;
   outline: none;
   border-color: #0d75ec;
 }
+#task ul{
+  list-style: none;
+  color: #e0e0e0;
+  padding: 0;
+}
+#task ul li{
+ padding: 10px;
+ background-color: rgba(225, 200, 239, 1);
+}
+.check{
+  float: left;
+  width: 1.8em;
+  height: 1.8em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+   border: 1px solid rgb(255, 255, 255);
+  -webkit-appearance: none;
+}
+.check :checked{
+background-color: #1dd2af;
+}
+.task{
+font-size: 18px;
+  padding: 0 10px;
+}
+.task:focus{
+  outline: none;
+}
+.task ul li i {
+  float: right;
+  cursor: pointer;
+}
 #task button{
   font-size: 1em;
   position: relative;
@@ -58,17 +95,30 @@ border-radius: 10px;
   outline: none;
 }
 #tasks{
-bacrkground-color: rgba(163, 225, 233, 1);
+background-color: rgba(163, 225, 233, 1);
 height: 50px;
 margin-bottom: 8px;
 padding: 5px 10px;
 display: flex;
-border-radius: Spx;
-aLlign-items: center;
+border-radius: 5px;
+align-items: center;
 justify-content: space-between;
 border: 1px solid #939697;
 cursor: pointer;
 }
+.task{
+  background-color: rgba(163, 225, 233, 1);
+height: 50px;
+margin-bottom: 8px;
+padding: 5px 10px;
+display: flex;
+border-radius: 5px;
+align-items: center;
+justify-content: space-between;
+border: 1px solid #939697;
+cursor: pointer;
+}
+
 ol,
 ul {
   list-style: none;
