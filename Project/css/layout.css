@@ -15,12 +15,12 @@ body {
   );
   font-size: 13px;
   color: #000000;
-  font-family: Arial, helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
 }
 
 .container{
-  width: 40%;
+  width: 50%;
   min-width: 450px; 
   position: absolute;
   transform:translate(-50%, -50%);
@@ -46,6 +46,8 @@ border-radius: 10px;
   font-family:'Times New Roman', Times, serif;
   font-size: 15px;
   font-weight: 400;
+      margin-right: 7px;
+      font-family: 'Source Sans Pro', sans-serif;
 }
 #task input:focus{
   outline: none;
@@ -58,7 +60,23 @@ border-radius: 10px;
 }
 #task ul li{
  padding: 10px;
- background-color: rgba(225, 200, 239, 1);
+  width: 96%;
+  height: 46px;
+  border-color: 2px solid #d1d3d4;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 400;
+      margin-right: 7px;
+}
+#list ul{
+  width: 75%;
+  height: 46px;
+  border-color: 2px solid #d1d3d4;
+  padding-left: 10px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 400;
+      margin-right: 7px;
 }
 .check{
   float: left;
@@ -85,8 +103,7 @@ font-size: 18px;
   cursor: pointer;
 }
 #task button{
-  font-size: 1em;
-  position: relative;
+  font-size: 2em;
   float:right;
   width: 20%;
   height: 45px;
