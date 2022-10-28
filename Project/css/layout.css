@@ -190,4 +190,18 @@ header nav {
   #skipto {
     visibility: hidden;
   }
+  #task{
+  padding-bottom: 30px;
+  padding-left: 75px;
+}
+}
+@media screen and (min-width: 300px){
+  #task{
+  padding-bottom: 30px;
+  padding-left: 75px;
+  width: 85%;
+}
+#task ul li{
+      width: 100%;
+}
 }
