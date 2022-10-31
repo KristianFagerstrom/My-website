@@ -4,7 +4,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 html {
   overflow-y: scroll;
@@ -18,90 +19,95 @@ body {
     rgba(163, 225, 233, 1) 68.1%
   );
   font-size: 13px;
-  color: #000000;
-  font-family: 'Source Sans Pro', sans-serif;
-min-height: 100vh;
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  padding-top: 20rem;
 }
-header{
-   padding: 2rem 1rem;
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
-     top: 30%;
-    left: 50%;
+header {
+  padding: 2rem 1rem;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  top: 30%;
+  left: 50%;
 }
-input,button{
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
 }
-.container{
+.container {
   width: 100%;
   min-width: 450px;
   background: #e2a0c5;
- flex: 0% 1 0%;
-    max-width: 750px;
-    margin: 2rem auto;
-    border-radius: 1rem;
+  flex: 0% 1 0%;
+  max-width: 750px;
+  margin: 2rem auto;
+  border-radius: 1rem;
 }
-main{
+main {
   flex: 1 1 0%;
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
 }
-#tdn{
-    flex: 1 1 0%;
-    padding: 1rrem;
-    border: 1px solid var(--primarytext);
-    border-radius: 1rem;
-    margin-right: 1rem;
+#tdn {
+  flex: 1 1 0%;
+  border-radius: 1rem;
+  margin-right: 1rem;
+      padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
 }
-#tdn::placeholder{
-    color: var(--primarytext);
+#tdn::placeholder {
+  color: var(--primarytext);
 }
-.task list{
+.task list {
   padding: 1rem;
 }
-#tasks .task{
+#tasks .task {
   display: flex;
   padding: 30px 20px;
-     display: flex;
-    justify-content: space-between;
-    background-color: #AE5A23;
-    border: 1px solid #0d75ec;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
-#task-submit #text{
+#task-submit #text {
   font-size: 1.25rem;
 }
-#tasks .task .content{
+#tasks .task .content {
   flex: 1 1 0%;
 }
-#tasks .task .content .text{
-  color: #A3E1E9;
-   font-size: 1.13rem;
-    width: 100%;
-    display: block;
-    transition: 0.4s;
+#tasks .task .content .text {
+  color: #000000;
+  font-size: 1.13rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
 }
-.task .actions button{
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 800;
-    margin: 0 0.5rrrem;
-    text-transform: uppercase;
-    transition: 0.4s;
+.task .actions button {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0 0.5rrrem;
+  text-transform: uppercase;
+  transition: 0.4s;
 }
-#task-form{
+#task-form {
   display: flex;
   width: 100%;
 }
-#task form input{
+#task form input {
   height: 46px;
   border-color: 2px solid #d1d3d4;
   padding-left: 10px;
@@ -111,22 +117,22 @@ main{
   margin-right: 7px;
   font-family: "Source Sans Pro", sans-serif;
 }
-#tdn input:focus{
+#tdn input:focus {
   outline: none;
   border-color: #0d75ec;
 }
-#task-submit{
- font-size: 1.25rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.4s;
-    border: 1px solid var(--primarytext);
-    border-radius: 1rem;
-    padding: 1rem;
+#task-submit {
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 1rem;
+  padding: 1rem;
+      background-color: #ffffff;
 }
 
-.task{
-font-size: 18px;
+.task {
+  font-size: 18px;
   padding: 0 10px;
 }
 .task:focus {
@@ -136,21 +142,18 @@ font-size: 18px;
   float: right;
   cursor: pointer;
 }
-.task .actions button{
-
-   cursor: pointer;
+.task .actions button {
+  cursor: pointer;
   font-size: 1rem;
-  float:right;
+  float: right;
   height: 45px;
   background-color: rgba(163, 225, 233, 1);
   border-radius: 10px;
   outline: none;
 }
 #tasks {
-  height: 50px;
   margin-bottom: 8px;
   padding: 5px 10px;
-  display: flex;
   border-radius: 5px;
   align-items: center;
   justify-content: space-between;
@@ -168,25 +171,25 @@ font-size: 18px;
   border: 1px solid #939697;
   cursor: pointer;
 }
-.task .actions button:hover{
-    opacity: 0.8;
+.task .actions button:hover {
+  opacity: 0.8;
 }
 
-.task .actions button:active{
-    opacity: 0.6;
+.task .actions button:active {
+  opacity: 0.6;
 }
-.task .actions .Edit{
-    color: var(--lightgreen);
+.task .actions .Edit {
+  color: var(--lightgreen);
 }
-.task .actions .Delete{
-    color: crimson;
+.task .actions .Delete {
+  color:  #e2a0c5;;
 }
-.task .actions .Completed{
-    color: var(--orange)
+.task .actions .Completed {
+  color: var(--orange);
 }
 
 .strike {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 ol,
 ul {
@@ -199,7 +202,7 @@ ul li {
 }
 h1 {
   margin-bottom: 10px;
-  color: #000000;
+  color:  #ffffff;;
   font-weight: bold;
 }
 a,
@@ -222,10 +225,10 @@ header nav {
   body {
     width: 100%;
   }
-#task{
-  padding-bottom: 30px;
-  padding-left: 75px;
-}
+  #task {
+    padding-bottom: 30px;
+    padding-left: 75px;
+  }
   #skipto {
     visibility: visible;
     padding-left: auto;
@@ -242,18 +245,18 @@ header nav {
   #skipto {
     visibility: hidden;
   }
-  #task{
-  padding-bottom: 30px;
-  padding-left: 75px;
+  #task {
+    padding-bottom: 30px;
+    padding-left: 75px;
+  }
 }
-}
-@media screen and (min-width: 300px){
-  #task{
-  padding-bottom: 30px;
-  padding-left: 75px;
-  width: 85%;
-}
-#task ul li{
-      width: 100%;
-}
+@media screen and (min-width: 300px) {
+  #task {
+    padding-bottom: 30px;
+    padding-left: 75px;
+    width: 85%;
+  }
+  #task ul li {
+    width: 100%;
+  }
 }

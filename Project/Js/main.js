@@ -1,7 +1,12 @@
+
 window.addEventListener("load", () => {
   const form = document.querySelector("#task-form");
   const input = document.querySelector("#tdn");
   const list = document.querySelector("#tasks");
+
+
+  const toDoArray = JSON.parse(localStorage.getItem("tasks")) || [];
+
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -70,5 +75,6 @@ window.addEventListener("load", () => {
     });
 
     input.value = "";
+    
   });
 });
