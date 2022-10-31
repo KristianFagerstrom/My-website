@@ -147,7 +147,6 @@ font-size: 18px;
   outline: none;
 }
 #tasks {
-  background-color: rgba(163, 225, 233, 1);
   height: 50px;
   margin-bottom: 8px;
   padding: 5px 10px;
@@ -155,7 +154,6 @@ font-size: 18px;
   border-radius: 5px;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #939697;
   cursor: pointer;
 }
 .task {
