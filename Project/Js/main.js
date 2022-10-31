@@ -1,5 +1,3 @@
-window.onload = loadTasks;
-
 document.querySelector("form").addEventListener("submit", (e) => {
   e.preventDefault();
   addTask();
@@ -51,7 +49,6 @@ function addTask() {
       <input type="text" value="${task.value}" class="task" onfocus="getCurrentTask(this)" onblur="editTask(this)">
       <i class="fa fa-trash" onclick="removeTask(this)"></i>`;
   list.insertBefore(li, list.children[0]);
-  // clear input
   task.value = "";
 }
 
@@ -75,6 +72,7 @@ function removeTask(event) {
   });
   localStorage.setItem("tasks", JSON.stringify(tasks));
   event.parentElement.remove();
+  li.parentNode.removeChild(li);
 }
 
 var currentTask = null;
