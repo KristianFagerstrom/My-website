@@ -1,45 +1,107 @@
 @charset "utf-8";
 /* CSS Document */
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 html {
   overflow-y: scroll;
 }
 body {
+  display: flex;
+  flex-direction: column;
   background-image: radial-gradient(
-    circle 588px at 31.7% 40.2%,
-    rgba(225, 200, 239, 1) 21.4%,
-    rgba(163, 225, 233, 1) 57.1%
+    circle 1000px at 50.7% 53.2%,
+    rgba(225, 200, 239, 1) 42.4%,
+    rgba(163, 225, 233, 1) 68.1%
   );
   font-size: 13px;
   color: #000000;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+min-height: 100vh;
+}
+header{
+   padding: 2rem 1rem;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+     top: 30%;
+    left: 50%;
+}
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+.container{
   width: 100%;
-}
-
-.container {
-  width: 50%;
   min-width: 450px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 30%;
-  left: 50%;
   background: #e2a0c5;
-  min-height: 100px;
-  border-radius: 10px;
+ flex: 0% 1 0%;
+    max-width: 750px;
+    margin: 2rem auto;
+    border-radius: 1rem;
 }
-#task {
-  position: relative;
+main{
+  flex: 1 1 0%;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+#tdn{
+    flex: 1 1 0%;
+    padding: 1rrem;
+    border: 1px solid var(--primarytext);
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+#tdn::placeholder{
+    color: var(--primarytext);
+}
+.task list{
+  padding: 1rem;
+}
+#tasks .task{
+  display: flex;
   padding: 30px 20px;
+     display: flex;
+    justify-content: space-between;
+    background-color: #AE5A23;
+    border: 1px solid #0d75ec;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
-#task form {
+#task-submit #text{
+  font-size: 1.25rem;
+}
+#tasks .task .content{
+  flex: 1 1 0%;
+}
+#tasks .task .content .text{
+  color: #A3E1E9;
+   font-size: 1.13rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+.task .actions button{
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0 0.5rrrem;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+#task-form{
   display: flex;
   width: 100%;
 }
-#task form input {
-  width: 75%;
+#task form input{
   height: 46px;
   border-color: 2px solid #d1d3d4;
   padding-left: 10px;
@@ -49,50 +111,22 @@ body {
   margin-right: 7px;
   font-family: "Source Sans Pro", sans-serif;
 }
-#task input:focus {
+#tdn input:focus{
   outline: none;
   border-color: #0d75ec;
 }
-#task ul {
-  list-style: none;
-  color: #e0e0e0;
-  padding: 0;
+#task-submit{
+ font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+    border: 1px solid var(--primarytext);
+    border-radius: 1rem;
+    padding: 1rem;
 }
-#task ul li {
-  padding: 10px;
-  width: 96%;
-  height: 46px;
-  border-color: 2px solid #d1d3d4;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
-  font-weight: 400;
-  margin-right: 7px;
-}
-#list ul {
-  width: 75%;
-  height: 46px;
-  border-color: 2px solid #d1d3d4;
-  padding-left: 10px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
-  font-weight: 400;
-  margin-right: 7px;
-}
-.check {
-  float: left;
-  width: 1.8em;
-  height: 1.8em;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: white;
-  border: 1px solid rgb(255, 255, 255);
-  -webkit-appearance: none;
-}
-.check :checked {
-  background-color: #1dd2af;
-}
-.task {
-  font-size: 18px;
+
+.task{
+font-size: 18px;
   padding: 0 10px;
 }
 .task:focus {
@@ -102,10 +136,11 @@ body {
   float: right;
   cursor: pointer;
 }
-#task button {
-  font-size: 2em;
-  float: right;
-  width: 20%;
+.task .actions button{
+
+   cursor: pointer;
+  font-size: 1rem;
+  float:right;
   height: 45px;
   background-color: rgba(163, 225, 233, 1);
   border-radius: 10px;
@@ -135,7 +170,26 @@ body {
   border: 1px solid #939697;
   cursor: pointer;
 }
+.task .actions button:hover{
+    opacity: 0.8;
+}
 
+.task .actions button:active{
+    opacity: 0.6;
+}
+.task .actions .Edit{
+    color: var(--lightgreen);
+}
+.task .actions .Delete{
+    color: crimson;
+}
+.task .actions .Completed{
+    color: var(--orange)
+}
+
+.strike {
+    text-decoration: line-through;
+}
 ol,
 ul {
   list-style: none;
@@ -153,8 +207,8 @@ h1 {
 a,
 p {
   margin: 0 0 10px;
-  line-height: 1.4em;
-  font-size: 1.2em;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
 }
 
 wrapper {
