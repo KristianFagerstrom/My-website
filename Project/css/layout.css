@@ -27,7 +27,7 @@ body {
 }
 header {
   padding: 2rem 1rem;
-  max-width: 700px;
+ 
   width: 100%;
   margin: 0 auto;
   top: 30%;
@@ -43,114 +43,32 @@ button {
 .container {
   width: 100%;
   min-width: 450px;
-  background: #e2a0c5;
-  flex: 0% 1 0%;
-  max-width: 750px;
-  margin: 2rem auto;
-  border-radius: 1rem;
+ 
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+
+  height: 100vh;
+  font-family: sans-serif;
 }
-main {
-  flex: 1 1 0%;
-  max-width: 700px;
-  width: 100%;
-  margin: 0 auto;
-}
-#tdn {
-  flex: 1 1 0%;
+
+.tdn {
   border-radius: 1rem;
   margin-right: 1rem;
-      padding-right: 1rem;
-    padding-left: 1rem;
-    background-color: #ffffff;
+    padding: 5rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
+    width: 60%;
 }
-#tdn::placeholder {
-  color: var(--primarytext);
-}
-.task list {
-  padding: 1rem;
-}
-#tasks .task {
-  display: flex;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: space-between;
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-#task-submit #text {
-  font-size: 1.25rem;
-}
-#tasks .task .content {
-  flex: 1 1 0%;
-}
-#tasks .task .content .text {
-  color: #000000;
-  font-size: 1.13rem;
-  width: 100%;
-  display: block;
-  transition: 0.4s;
-}
-.task .actions button {
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 800;
-  margin: 0 0.5rrrem;
-  text-transform: uppercase;
-  transition: 0.4s;
-}
-#task-form {
-  display: flex;
-  width: 100%;
-}
-#task form input {
-  height: 46px;
-  border-color: 2px solid #d1d3d4;
-  padding-left: 10px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
-  font-weight: 400;
-  margin-right: 7px;
-  font-family: "Source Sans Pro", sans-serif;
-}
-#tdn input:focus {
-  outline: none;
-  border-color: #0d75ec;
-}
-#task-submit {
-  font-size: 1.25rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.4s;
-  border-radius: 1rem;
-  padding: 1rem;
-      background-color: #ffffff;
-}
+
 
 .task {
   font-size: 18px;
   padding: 0 10px;
+  width: fit-content;
 }
-.task:focus {
-  outline: none;
-}
-.task ul li i {
-  float: right;
-  cursor: pointer;
-}
-.task .actions button {
-  cursor: pointer;
-  font-size: 1rem;
-  float: right;
-  height: 45px;
-  background-color: rgba(163, 225, 233, 1);
-  border-radius: 10px;
-  outline: none;
-}
+
 #tasks {
   margin-bottom: 8px;
   padding: 5px 10px;
@@ -159,38 +77,14 @@ main {
   justify-content: space-between;
   cursor: pointer;
 }
-.task {
-  background-color: rgba(163, 225, 233, 1);
-  height: 50px;
-  margin-bottom: 8px;
-  padding: 5px 10px;
+
+
+
+form{
   display: flex;
-  border-radius: 5px;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #939697;
-  cursor: pointer;
-}
-.task .actions button:hover {
-  opacity: 0.8;
 }
 
-.task .actions button:active {
-  opacity: 0.6;
-}
-.task .actions .Edit {
-  color: var(--lightgreen);
-}
-.task .actions .Delete {
-  color:  #e2a0c5;;
-}
-.task .actions .Completed {
-  color: var(--orange);
-}
 
-.strike {
-  text-decoration: line-through;
-}
 ol,
 ul {
   list-style: none;
@@ -204,6 +98,7 @@ h1 {
   margin-bottom: 10px;
   color:  #ffffff;;
   font-weight: bold;
+  padding: 5rem;
 }
 a,
 p {
@@ -212,10 +107,6 @@ p {
   font-size: 1.2rem;
 }
 
-wrapper {
-  width: 100%;
-  max-width: 1024px;
-}
 header nav {
   float: right;
   padding-right: 20px;
@@ -231,7 +122,7 @@ header nav {
   }
   #skipto {
     visibility: visible;
-    padding-left: auto;
+    padding-left: 4rem;
     text-align: center;
     width: 100%;
     padding-top: 10px;
@@ -240,7 +131,98 @@ header nav {
     width: 100%;
   }
 }
+@media (max-width:768px) {
+  .tdn {
+    width: 90%;
+  }
+}
 
+.tdn h1 {
+  color: white;
+  font-size: 40px;
+  padding: 5rem;
+  border-radius: .5rem .5rem 0 0;
+  background-color: #757bbd;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.tdn form {
+  display: flex;
+  width: 100%;
+  background-color: #262e4c;
+}
+
+.tdn form input {
+  border: none;
+  background-color: #94dbff;
+
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+.tdn form button {
+  border: none;
+  color: white;
+  background-color: #1dd2af;
+  font-size: 25px;
+  font-weight: 600;
+  height: 42px;
+  width: 10%;
+}
+
+.tdn ul {
+  list-style: none;
+  color: #e0e0e0;
+  padding: 0;
+}
+
+.tdn ul li {
+  padding: 10px;
+  background-color: #262e4c;
+  border-bottom: 1px solid #3a4674;
+}
+
+.check {
+  width: 0.8em;
+  height: 0.8em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.check:checked {
+  background-color: #1dd2af;
+}
+
+.task {
+  font-size: 18px;
+  padding: 0 10px;
+  width: fit-content;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.task:focus {
+  outline: none;
+}
+
+.tdn ul li i {
+  float: right;
+  cursor: pointer;
+}
+
+.tdn ul li i:hover {
+  color: rgb(255, 82, 82);
+}
+
+.completed {
+  color: rgba(192, 192, 192, 0.8);
+  text-decoration: line-through;
+}
 @media screen and (min-width: 551px) {
   #skipto {
     visibility: hidden;
