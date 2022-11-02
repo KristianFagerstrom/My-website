@@ -13,10 +13,10 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
   font-size: 13px;
   color: #ffffff;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -25,19 +25,19 @@ body {
   padding-top: 20rem;
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 header {
   padding: 2rem 1rem;
- 
+
   width: 100%;
   margin: 0 auto;
   top: 30%;
@@ -53,8 +53,8 @@ button {
 .container {
   width: 100%;
   min-width: 450px;
- 
-    display: flex;
+
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 50px;
@@ -66,12 +66,11 @@ button {
 .tdn {
   border-radius: 1rem;
   margin-right: 1rem;
-    padding: 5rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1rem;
-    width: 60%;
+  padding: 5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  width: 60%;
 }
-
 
 .task {
   font-size: 18px;
@@ -88,12 +87,9 @@ button {
   cursor: pointer;
 }
 
-
-
-form{
+form {
   display: flex;
 }
-
 
 ol,
 ul {
@@ -106,7 +102,7 @@ ul li {
 }
 h1 {
   margin-bottom: 10px;
-  color:  #ffffff;;
+  color: #ffffff;
   font-weight: bold;
   padding: 5rem;
 }
@@ -141,14 +137,14 @@ header nav {
     width: 100%;
   }
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .tdn {
     width: 90%;
   }
 }
 
 .tdn h1 {
-  color:#1dd2af;
+  color: #1dd2af;
   font-size: 40px;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -164,15 +160,15 @@ header nav {
 }
 
 .tdn form input {
- border: solid;
-    background-color: #000000;
-    font-size: 18px;
-    color: #1dd2af;
-    padding: 10px;
-    width: 100%;
+  border: solid;
+  background-color: #000000;
+  font-size: 18px;
+  color: #1dd2af;
+  padding: 10px;
+  width: 100%;
 }
 
- form button {
+form button {
   border: none;
   color: white;
   background-color: #1dd2af;
@@ -182,12 +178,11 @@ header nav {
   width: 10%;
 }
 
- ul {
+ul {
   list-style: none;
   color: #e0e0e0;
   padding: 0;
 }
-
 
 ul li {
   padding: 10px;
@@ -218,13 +213,13 @@ ul li {
 }
 
 li:before {
-  content:"\25A1" ;
+  content: "\25A1";
   padding: 0.6rem;
 }
 li:hover {
   cursor: pointer;
 }
-ul li i  {
+ul li i {
   float: right;
   cursor: pointer;
 }
@@ -232,8 +227,7 @@ li:last-child {
   border-bottom: none;
 }
 .checked {
-  color:  #1dd2af;
-
+  color: #1dd2af;
 }
 .checked:before {
   content: "🔥";
@@ -243,9 +237,9 @@ li:last-child {
   text-decoration: none;
 }
 .checked:after {
-  margin-left: 1rem; 
+  margin-left: 1rem;
   text-align: right;
-   content: "(remove)";
+  content: "(remove)";
   color: rgba(252, 36, 36, 0.8);
 }
 @media screen and (min-width: 551px) {
@@ -263,7 +257,7 @@ li:last-child {
     padding-left: 75px;
     width: 85%;
   }
-   ul li {
+  ul li {
     width: 100%;
   }
 }
