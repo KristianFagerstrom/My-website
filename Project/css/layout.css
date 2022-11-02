@@ -158,14 +158,13 @@ header nav {
 .tdn form input {
   border: none;
   background-color: #94dbff;
-
   font-size: 18px;
   color: white;
   padding: 10px;
-  width: 90%;
+  width: 100%;
 }
 
-.tdn form button {
+ form button {
   border: none;
   color: white;
   background-color: #1dd2af;
@@ -175,14 +174,14 @@ header nav {
   width: 10%;
 }
 
-.tdn ul {
+ ul {
   list-style: none;
   color: #e0e0e0;
   padding: 0;
 }
 
 
-.tdn ul li {
+ul li {
   padding: 10px;
   background-color: #262e4c;
   border-bottom: 1px solid #ffffff;
@@ -210,27 +209,37 @@ header nav {
   color: #fff;
 }
 
-.task:focus {
-  outline: none;
-}
-
-.fa-trash::before{
-  content:"🔥" ;
+li:before {
+  content:"\25A1" ;
   padding: 0.6rem;
 }
-
-.tdn ul li i  {
+li:hover {
+  cursor: pointer;
+}
+ul li i  {
   float: right;
   cursor: pointer;
 }
-
-.tdn ul li i:hover {
-  color: #000000;
+li:last-child {
+  border-bottom: none;
 }
+.checked {
+  color:  #1dd2af;
 
-.completed {
-  color: rgba(252, 36, 36, 0.8);
+}
+.checked:before {
+  content: "🔥";
+  padding: 0.6rem;
   text-decoration: line-through;
+}
+.checked:hover {
+  text-decoration: none;
+}
+.checked:after {
+  margin-left: 1rem; 
+  text-align: right;
+   content: "(remove)";
+  color: rgba(252, 36, 36, 0.8);
 }
 @media screen and (min-width: 551px) {
   #skipto {
@@ -247,7 +256,7 @@ header nav {
     padding-left: 75px;
     width: 85%;
   }
-  #task ul li {
+   ul li {
     width: 100%;
   }
 }
