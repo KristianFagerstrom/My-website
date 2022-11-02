@@ -230,7 +230,6 @@ li:last-child {
 .checked:before {
   content: "🔥";
   padding: 0.6rem;
-  text-decoration: line-through;
 }
 .checked:hover {
   text-decoration: none;
