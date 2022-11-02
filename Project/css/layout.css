@@ -135,7 +135,7 @@ header nav {
 }
 @media (max-width:768px) {
   .tdn {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -162,7 +162,7 @@ header nav {
   font-size: 18px;
   color: white;
   padding: 10px;
-  width: 100%;
+  width: 90%;
 }
 
 .tdn form button {
@@ -181,10 +181,11 @@ header nav {
   padding: 0;
 }
 
+
 .tdn ul li {
   padding: 10px;
   background-color: #262e4c;
-  border-bottom: 1px solid #3a4674;
+  border-bottom: 1px solid #ffffff;
 }
 
 .check {
@@ -213,17 +214,22 @@ header nav {
   outline: none;
 }
 
-.tdn ul li i {
+.fa-trash::before{
+  content:"🔥" ;
+  padding: 0.6rem;
+}
+
+.tdn ul li i  {
   float: right;
   cursor: pointer;
 }
 
 .tdn ul li i:hover {
-  color: rgb(255, 82, 82);
+  color: #000000;
 }
 
 .completed {
-  color: rgba(192, 192, 192, 0.8);
+  color: rgba(252, 36, 36, 0.8);
   text-decoration: line-through;
 }
 @media screen and (min-width: 551px) {

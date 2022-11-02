@@ -1,5 +1,7 @@
-document.querySelector("form").addEventListener("submit", (e) => {
-  e.preventDefault();
+ window.onload = loadTasks;
+
+document.querySelector("form").addEventListener("submit", (e) => {{}
+  e.preventDefault(e);
   addTask();
 });
 
@@ -14,10 +16,10 @@ function loadTasks() {
     li.innerHTML = `<input type="checkbox" onclick="taskComplete(this)" class="check" ${
       task.completed ? "checked" : ""
     }>
-          <input type="text" value="${task.task}" class="task ${
+      <input type="text" value="${task.task}" class="task ${
       task.completed ? "completed" : ""
     }" onfocus="getCurrentTask(this)" onblur="editTask(this)">
-          <i class="fa fa-trash" onclick="removeTask(this)"></i>`;
+      <i class="fa fa-trash" onclick="removeTask(this)"></i>`;
     list.insertBefore(li, list.children[0]);
   });
 }
@@ -67,12 +69,12 @@ function removeTask(event) {
   let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
   tasks.forEach((task) => {
     if (task.task === event.parentNode.children[1].value) {
+      // delete task
       tasks.splice(tasks.indexOf(task), 1);
     }
   });
   localStorage.setItem("tasks", JSON.stringify(tasks));
   event.parentElement.remove();
-  li.parentNode.removeChild(li);
 }
 
 var currentTask = null;
@@ -92,7 +94,7 @@ function editTask(event) {
 
   tasks.forEach((task) => {
     if (task.task === event.value) {
-      alert("Task already exist!");
+      alert("This task already exist!");
       event.value = currentTask;
       return;
     }
