@@ -62,7 +62,7 @@ window.addEventListener("load", () => {
 
       edit.addEventListener("click", () => {
         if (
-          input_text.style.color == "black" &&
+          input_text.style.color == "#1dd2af" &&
           input_text.style.textDecoration == "none"
         ) {
           input_text.removeAttribute("readonly");
@@ -70,7 +70,7 @@ window.addEventListener("load", () => {
           input_text.focus();
         } else {
           input_text.setAttribute("readonly", true);
-          input_text.style.color = "black";
+          input_text.style.color = "green";
         }
       });
       del.addEventListener("click", () => {
