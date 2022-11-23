@@ -1,0 +1,12 @@
+body{
+background: #000000 no-repeat;
+}
+h1,h2{
+font-size: 30px;
+}
+.container{
+     width: 800px;
+            margin: auto;
+            color: #FFF;
+            font-size: 25px;
+}
