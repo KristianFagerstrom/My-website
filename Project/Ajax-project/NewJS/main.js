@@ -1,8 +1,9 @@
-$(document).ready(function () {
+$(window).ready(function () {
   $("#reset").click(function (e) {
-    $("#kaupunkivalitsin").val("valitse");
-    $("#viesti").html("");
+    $("#kaupunkivalitsin").val("valitse")
+    $("#viesti").html("")
   });
+  
   //valitsee kaupunging nappulan avulla
   $("#submit").click(function () {
     var validate = validate();
