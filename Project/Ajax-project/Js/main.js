@@ -21,10 +21,11 @@ $.ajax({
         table.append("<tr><td>Current Temperature:</td><td>" + result["main"]["temp"] + "°C</td></tr>");
          table.append("<tr><td>Humidity:</td><td>" + result["main"]["humidity"] + "</td></tr>");
     table.append("<tr><td>Weather:</td><td>" + result["weather"][0]["description"] + "</td></tr>");
-$("#viesti")
-    });
-}
-error: function(){
-    alert("error loading data")
+$("#viesti").html(table);
+    },
+error: function(xhr, status, error){
+    alert("Result:  "+ status + "" + error + " " + xhr.status + "" + xhr.statustext)
 }
 });
+    }
+    });
