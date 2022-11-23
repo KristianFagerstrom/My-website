@@ -11,12 +11,14 @@ $("#submit").click(function(){
     if(validate.length == 0){
 
 $.ajax({
-    type: "POST",
-    url: "http://pro.openweathermap.org/data/2.5/weather?id="+ $("#kaupunkivalitsin").val() + "&appid=f6c2716e92fa61a4a94481d15d56dc9d&units=metric", 
+    type: "GET",
+    url: "http://api.openweathermap.org/data/2.5/weather?id="+ $("#kaupunkivalitsin").val() + "&appid=f6c2716e92fa61a4a94481d15d56dc9d&units=metric", 
     dataType:"json",
     success: function(result, status, xhr){
         var table =$("<table><tr><th>Sää tiedot</th></tr></table>");
-
+        table.append("<tr><td>City:</td><td>"+ result["name"] + "</td></tr>");
+        table.append("<tr><td>Country:</td><td>")
+$("#viesti")
     });
 }
 error: function(){
