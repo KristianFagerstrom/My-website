@@ -1,12 +1,17 @@
-$(window).ready("load", function () {
+$(function(){
+  load();
+})
+
+$(document).ready(function () {
   $("#reset").click(function (e) {
     $("#kaupunkivalitsin").val("valitse")
     $("#viesti").html("")
+    load();
   });
   
   //valitsee kaupunging nappulan avulla
   $("#submit").click(function () {
-    var validate = validate();
+    var Validate = validate();
     $("#viesti").html(validate);
     if (validate.length == 0) {
       $.ajax({
