@@ -17,7 +17,10 @@ $.ajax({
     success: function(result, status, xhr){
         var table =$("<table><tr><th>Sää tiedot</th></tr></table>");
         table.append("<tr><td>City:</td><td>"+ result["name"] + "</td></tr>");
-        table.append("<tr><td>Country:</td><td>")
+        table.append("<tr><td>Country:</td><td>"+ result["sys"]["country"]+ "</td></tr>");
+        table.append("<tr><td>Current Temperature:</td><td>" + result["main"]["temp"] + "°C</td></tr>");
+         table.append("<tr><td>Humidity:</td><td>" + result["main"]["humidity"] + "</td></tr>");
+    table.append("<tr><td>Weather:</td><td>" + result["weather"][0]["description"] + "</td></tr>");
 $("#viesti")
     });
 }
