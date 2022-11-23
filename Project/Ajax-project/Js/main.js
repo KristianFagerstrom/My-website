@@ -9,7 +9,7 @@ $(document).ready(function () {
     $("#viesti").html(validate);
     if (validate.length == 0) {
       $.ajax({
-        type: "GET",
+        type: "POST",
         url:
           "http://api.openweathermap.org/data/2.5/weather?id=" +
           $("#kaupunkivalitsin").val() +
