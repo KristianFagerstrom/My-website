@@ -1,4 +1,4 @@
-$(window).ready(function () {
+$(window).ready("load", function () {
   $("#reset").click(function (e) {
     $("#kaupunkivalitsin").val("valitse")
     $("#viesti").html("")

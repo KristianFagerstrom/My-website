@@ -4,6 +4,7 @@ background: #000000 no-repeat;
 h1,h2{
 font-size: 30px;
 color: #ffffff;
+text-align: center;
 }
 .container{
      width: 800px;
@@ -14,4 +15,19 @@ color: #ffffff;
 .container #content{
     border: dashed 2px #CCC;
                 padding: 10px;
+}
+#reset{
+    padding:  5px 10px;
+    background-color: aqua;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+#reset:hover{
+    color: aqua;
+    background-color: #ffffff;
+}
+#viewContent{
+    padding-left: 20px;
 }
