@@ -5,7 +5,7 @@ $(document).ready(function () {
   });
   //valitsee kaupunging nappulan avulla
   $("#submit").click(function () {
-    var validate = Validate();
+    var validate = validate();
     $("#viesti").html(validate);
     if (validate.length == 0) {
       $.ajax({
