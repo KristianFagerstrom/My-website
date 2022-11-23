@@ -1,6 +1,7 @@
 $(function(){
   load();
 })
+// lataa sivuston funktio
 
 $(document).ready(function () {
   $("#reset").click(function (e) {
@@ -48,6 +49,7 @@ $(document).ready(function () {
           );
           $("#viesti").html(table);
         },
+        // kaikki tarvittavat taulut johon syötetään tietoa
         error: function (xhr, status, error) {
           alert(
             "Result:  " +
@@ -63,6 +65,7 @@ $(document).ready(function () {
       });
     }
   });
+  // error funktio joka kertoo jos syötettävä asia ei ole oikein
   $(document).ajaxStart(function () {
     $("img").show();
   });
