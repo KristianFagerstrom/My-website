@@ -1,39 +1,42 @@
-body{
-background: #000000 no-repeat;
+html{
+    background-color: #000;
+    background-image: url('img/retro.png');
 }
-h1,h2{
-font-size: 30px;
-color: #ffffff;
-text-align: center;
+h1,
+h2 {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
 }
-.container{
-     width: 800px;
-            margin: auto;
-            color: #FFF;
-            font-size: 25px;
+.container {
+  width: 800px;
+  margin: auto;
+  color: #fff;
+  font-size: 25px;
 }
-.container #content{
-    border: dashed 2px #CCC;
-                padding: 10px;
+.container #content {
+  border: dashed 2px #ccc;
+  padding: 10px;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E")
+    1;
 }
-#reset{
-    padding:  10px 20px;
-    background-color: aqua;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-      box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+#reset {
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
   font-size: 100%;
   border-radius: 0.6em;
-
 }
-#reset:hover{
-    color: aqua;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+#reset:hover {
+  color: aqua;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
-#viewContent{
-    padding-left: 20px;
+#viewContent {
+  padding-left: 20px;
 }
