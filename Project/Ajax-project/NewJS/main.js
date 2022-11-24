@@ -16,7 +16,7 @@ $(document).ready(function () {
     $("#viesti").html(validate);
     if (validate.length == 0) {
       $.ajax({
-        type: "POST",
+        type: "GET",
         url:
           "http://api.openweathermap.org/data/2.5/weather?id=" +
           $("#kaupunkivalitsin").val() +
