@@ -18,7 +18,7 @@ $(document).ready(function () {
       $.ajax({
         type: "POST",
         url:
-          "http://api.openweathermap.org/data/2.5/weather?id=" +
+          "https://api.openweathermap.org/data/2.5/weather?id=" +
           $("#kaupunkivalitsin").val() +
           "&appid=f6c2716e92fa61a4a94481d15d56dc9d&units=metric",
         dataType: "json",
