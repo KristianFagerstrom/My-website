@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<title>Native-weather-app</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+ <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"
+      rel="script"
+    />
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+   <link href="https://fonts.cdnfonts.com/css/press-start" rel="stylesheet">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="NewJS/main.js"></script>
+</head>
+<body>
+<h1>Globaali Saa</h1>
+<h2><button id="reset">Reset</button></button></h2>
+<div class="container">
+  <div id="content">
+<div id="viewContent">
+<h3>Valitse kaupunki josta haluat tietaa saan</h2>
+<select id="kaupunkivalitsin">
+  <option value="valitse">Valitse</option>
+  <option value="658225">Helsinki</option> 
+  <option value="2673730">Stockholm</option> 
+  <option value="3413829">Reykjavík</option> 
+  <option value="3143244">Oslo</option> 
+  <option value="2618425">Copenhagen</option> 
+  <option value="2643743">London</option>
+</select>
+<button id="submit">Submit</button>
+<div class="image">
+  <img src="img/loading-2.gif">
+</div>
+<div id="viesti"></div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>

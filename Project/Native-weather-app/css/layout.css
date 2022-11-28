@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-size: 13px;
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  padding-top: 20rem;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+section {
+  width: 100%;
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  height: 100vh;
+  font-family: sans-serif;
+}
+header {
+  padding: 2rem 1rem;
+  width: 100%;
+  margin: 0 auto;
+  top: 30%;
+  left: 50%;
+}
+
+.container .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding-left: 3.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 10px;
+}
+
+.fa-check:before {
+  content: ✔️;
+}
+
+.task {
+  font-size: 18px;
+  padding: 0 10px;
+  width: fit-content;
+}
+
+form {
+  display: flex;
+
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5rem;
+}
+a,
+p {
+  margin: 0 0 10px;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+}
+
+header nav {
+  float: right;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.fa-check:before {
+  content: "✔️";
+}
+.fa-trash-alt:before,
+.fa-trash-can:before {
+  content: "🗑️";
+}
+
+.fa-edit:before,
+.fa-pen-to-square:before {
+  content: "🖊️";
+}
+.task .fa-trash-can {
+  background-color: #1dd2af;
+  color: #fff;
+  font-weight: 400;
+}
+.task .fa-check {
+  background-color: #3f9a41;
+  color: #fff;
+}
+.btn {
+  display: flex;
+}
+.task .fa-pen-to-square {
+  background-color: #635acf;
+  content: "🔥";
+  color: #fff;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    width: 100%;
+  }
+
+  #skipto {
+    visibility: visible;
+    padding-left: 4rem;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+  }
+  header {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+}
+
+section h1 {
+  color: #1dd2af;
+  font-size: 34px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: #000000;
+  font-family: "Rajdhani", sans-serif;
+}
+
+section form {
+  display: flex;
+  background-color: #262e4c;
+}
+.container {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.fa-solid {
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.fa-solid,
+fa-plus::before {
+  content: ✔️;
+}
+.fa-solid,
+fa-plus {
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+input,
+button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+section form input {
+  border: solid;
+  background-color: #000000;
+  font-size: 18px;
+  color: #1dd2af;
+  padding: 10px;
+  width: 100%;
+}
+
+form #input-form-text {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  width: 80%;
+}
+form button {
+  border: none;
+  color: white;
+  background-color: #1dd2af;
+  font-size: 25px;
+  font-weight: 600;
+  height: 54px;
+  width: 20%;
+}
+.task .input-text {
+  width: 90%;
+  color: #1dd2af;
+  font-size: 18px;
+}
+form .fa-plus::before {
+  background-color: #1dd2af;
+}
+.fa-add:before,
+.fa-plus:before {
+  content: ✔️;
+}
+.task .fa-trash-can {
+  background-color: #1dd2af;
+  color: #fff;
+  font-weight: 400;
+}
+
+.task .fa-pen-to-square {
+  background-color: #635acf;
+  color: #fff;
+  font-weight: 400;
+}
+
+.check {
+  width: 0.8em;
+  height: 0.8em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.check:checked {
+  background-color: #1dd2af;
+}
+
+.task {
+  font-size: 18px;
+  padding: 0 10px;
+  width: fit-content;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+li:before {
+  content: "\25A1";
+  padding: 0.6rem;
+}
+li:hover {
+  cursor: pointer;
+}
+ul li i {
+  float: right;
+  cursor: pointer;
+}
+li:last-child {
+  border-bottom: none;
+}
+.checked {
+  color: #1dd2af;
+}
+.checked:before {
+  content: "🔥";
+  padding: 0.6rem;
+}
+.checked:hover {
+  text-decoration: none;
+}
+.checked:after {
+  margin-left: 1rem;
+  text-align: right;
+  content: "(remove)";
+  color: rgba(252, 36, 36, 0.8);
+}
+@media screen and (min-width: 551px) {
+  #skipto {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 300px) {
+  ul li {
+    width: 100%;
+  }
+}
