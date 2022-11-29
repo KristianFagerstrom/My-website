@@ -5,6 +5,7 @@ let description = document.querySelector(".current .weather");
 let city = document.querySelector(".location .kaupunki");
 let date = document.querySelector(".location .päivämäärä");
 
+//nappi funktio
 button.addEventListener("click", function () {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${inputvalue.value}&units=metric&appid=92e59231142e620888c7b8222e940a6e`
