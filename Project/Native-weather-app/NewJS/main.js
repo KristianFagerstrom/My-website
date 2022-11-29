@@ -21,7 +21,7 @@ const displayData = (weather) => {
   let now = new Date();
   date.innerText = dateBuilder(now);
 };
-
+//päivämäärät dataan
 function dateBuilder(d) {
   let months = [
     "January",
